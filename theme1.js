@@ -2,16 +2,15 @@
 document.observe("dom:loaded", function () {
     if ( ! $$('div.classificationBanner')[0] ) {
       var headerBannerW = new Element('div');
-      headerBannerW.className = 'classificationBannerW';
+      headerBannerW.className = 'classificationBannerW vertal';
         
       var headerBanner = new Element('div');
       headerBanner.innerHTML = 'UNCLASSIFIED';
-      headerBanner.className = 'classification-banner';
-      headerBanner.className += ' unclassified';
-      headerBanner.className += ' vertal';
+      headerBanner.className = 'classification-banner vertal unclassified';
         
-      headerBannerW.className += ' vertal';
       headerBannerW.insert(headerBanner);
+      var footerBanneryW = headerBannerW.cloneNode(true)
+      $$('body')[0].appendChild(footerBanneryW);
       $$('body')[0].insertBefore(headerBannerW, $$('div#page-head')[0]);
     }
 });
