@@ -2,7 +2,7 @@
 document.observe("dom:loaded", function () {
     if ( ! $$('div.classificationBanner')[0] ) {
       var headerBannerW = new Element('div');
-      headerBannerW.className = 'classificationBannerW vertal';
+      headerBannerW.className = 'classificationBannerW';
         
       var headerBanner = new Element('div');
       headerBanner.innerHTML = 'UNCLASSIFIED';
@@ -11,6 +11,7 @@ document.observe("dom:loaded", function () {
       headerBannerW.insert(headerBanner);
       var footerBanneryW = headerBannerW.cloneNode(true)
       $$('body')[0].appendChild(footerBanneryW);
+      headerBannerW.className += ' vertal';
       $$('body')[0].insertBefore(headerBannerW, $$('div#page-head')[0]);
     }
 });
