@@ -10,6 +10,7 @@ document.observe("dom:loaded", function () {
         
       headerBannerW.insert(headerBanner);
       var footerBanneryW = headerBannerW.cloneNode(true)
+      footerBanneryW.className += ' classificationFooter';
       // $$('body')[0].appendChild(footerBanneryW);
       $$('footer')[0].appendChild(footerBanneryW);
       headerBannerW.className += ' vertal';
