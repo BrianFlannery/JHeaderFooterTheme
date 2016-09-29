@@ -1,9 +1,30 @@
-div.classificationBanner {
-  background-color: green;
-  height: 20px;
-  text-align: center;
+div.vertal {
   vertical-align: middle;
 }
 div.classificationBannerW {
+  vertical-align: middle;
   text-transform: uppercase;
 }
+/* Classification banners */
+   .classification-banner {
+     text-align: center;
+     max-height: 20px;
+     line-height: 1.0em;
+     font-size: 0.8em;
+     padding: 2px 0;
+   }
+
+   .unclassified {
+     background-color: #3F7A47 ;
+     color: #fff;
+   }
+
+   .secret {
+     background-color: #E22026 ;
+     color: #fff;
+   }
+
+   .top-secret {
+     background-color: #FFF104 ;
+     color: #000;
+   }
